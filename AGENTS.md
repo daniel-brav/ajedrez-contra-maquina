@@ -9,8 +9,8 @@ está organizado el proyecto y qué reglas sigue.
 - Proyecto académico de **Lenguaje de Programación** (5.º semestre, Ingeniería de Sistemas).
 - La persona que programa es **estudiante**: está aprendiendo. Tu rol es enseñar y revisar, no
   resolverle la materia.
-- Producto: <!-- el alumno describe aquí su producto en 2 líneas -->
-
+- Producto: Plataforma web de ajedrez contra motor IA, desarrollada con Node.js, TypeScript y PostgreSQL.
+  Incluye validación de reglas, algoritmos de decisión propios y persistencia de historial de partidas.
 ## Reglas obligatorias
 
 1. **No escribas el código de `src/shared/structures/` ni de `src/shared/algorithms/`** (épicas E3 y E4).
@@ -21,7 +21,7 @@ está organizado el proyecto y qué reglas sigue.
 3. **Cambios a la base = migración nueva** en `db/migrations/NNN_descripcion.sql`.
    Nunca edites una migración existente.
 4. **Valida toda entrada** a la API con el esquema Zod del `*.model.ts` de la funcionalidad y responde con el código HTTP correcto.
-5. **Cada cambio lleva pruebas.** Unitarias en `tests/unit`, de API en `tests/integration`.
+5. **Cada cambio lleva  pruebas.** Unitarias en `tests/unit`, de API en `tests/integration`.
 6. **Explica lo que propones.** Cada bloque de código que sugieras debe venir con una explicación
    breve de qué hace y por qué, para que el estudiante pueda defenderlo en vivo.
 7. **No subas secretos.** Nada de contraseñas ni `.env` en el código.
